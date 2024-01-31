@@ -1,7 +1,9 @@
 import Arrow from './Arrow'
+import Calendar from './Calendar'
 
 const SVG = {
-  Arrow
+  Arrow,
+  Calendar
 }
 
 export default SVG
