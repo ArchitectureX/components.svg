@@ -9,7 +9,7 @@ type Props = {
 const SVG: FC<Props> = ({ label = undefined, onClick = undefined, fill = '#666' }) => (
   <div data-component="SVG.Lock" onClick={onClick} title={label}>
     <svg
-      fill="#666"
+      fill={fill}
       width="24px"
       height="24px"
       version="1.1"
