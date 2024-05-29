@@ -7,7 +7,6 @@ import Guests from './Guests'
 import Hamburger from './Hamburger'
 import Link from './Link'
 import Lock from './Lock'
-import Logo from './Logo'
 import Logout from './Logout'
 import Money from './Money'
 import Moon from './Moon'
@@ -30,7 +29,6 @@ const SVG = {
   Hamburger,
   Link,
   Lock,
-  Logo,
   Logout,
   Money,
   Moon,
