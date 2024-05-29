@@ -17,10 +17,10 @@ const SVG: FC<Props> = ({ label = undefined, onClick = undefined }) => (
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path
-        d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z"
-        fill="black"
-      />
+      <rect x="0.75" y="0.5" width="19" height="13" stroke="#666" />
+      <path d="M4.25 4L10.25 9L16.25 4" stroke="#666" strokeLinecap="square" />
+      <path d="M7.25 7L4.25 10" stroke="#666" strokeLinecap="square" />
+      <path d="M16.25 10L13.25 7" stroke="#666" strokeLinecap="square" />
     </svg>
   </div>
 )
