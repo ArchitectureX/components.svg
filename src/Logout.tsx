@@ -6,13 +6,13 @@ type Props = {
 }
 
 const SVG: FC<Props> = ({ label = undefined, onClick = undefined }) => (
-  <div data-component="SVG.Settings" onClick={onClick} title={label}>
+  <div data-component="SVG.Logout" onClick={onClick} title={label}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#666"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

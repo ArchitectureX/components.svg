@@ -11,7 +11,7 @@ const SVG: FC<Props> = ({
   className = undefined,
   label = undefined,
   onClick = undefined,
-  stroke = 'black'
+  stroke = '#666'
 }) => (
   <div data-component="SVG.Moon" className={className} onClick={onClick} title={label}>
     <svg

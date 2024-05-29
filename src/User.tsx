@@ -3,16 +3,17 @@ import React, { FC } from 'react'
 type Props = {
   label?: string
   onClick?: any
+  stroke?: string
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined }) => (
+const SVG: FC<Props> = ({ label = undefined, onClick = undefined, stroke = '#666' }) => (
   <div data-component="SVG.User" onClick={onClick} title={label}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6"
       viewBox="0 0 24 24"
       strokeWidth="2"
-      stroke="currentColor"
+      stroke={stroke}
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"

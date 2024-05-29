@@ -10,7 +10,7 @@ type Props = {
   width?: number
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined, stroke = 'black' }) => (
+const SVG: FC<Props> = ({ label = undefined, onClick = undefined, stroke = '#666' }) => (
   <div data-component="SVG.Hamburger" onClick={onClick} title={label}>
     <svg
       className="w-6 h-6"

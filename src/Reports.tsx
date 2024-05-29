@@ -12,7 +12,7 @@ const SVG: FC<Props> = ({ label = undefined, onClick = undefined }) => (
       className="h-6 w-6"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="currentColor"
+      stroke="#666"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

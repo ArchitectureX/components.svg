@@ -4,9 +4,15 @@ type Props = {
   label?: string
   onClick?: any
   className?: string
+  fill?: string
 }
 
-const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = undefined }) => (
+const SVG: FC<Props> = ({
+  className = 'h-6 w-6',
+  label = undefined,
+  onClick = undefined,
+  fill = '#666'
+}) => (
   <div data-component="SVG.Calendar" onClick={onClick} title={label}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +25,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
       strokeLinejoin="round"
     >
       <path
-        fill="#333333"
+        fill={fill}
         d="
   M 96.26 481.62
   C 77.42 481.63 58.67 481.72 39.96 481.54
@@ -152,7 +158,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#333333"
+        fill={fill}
         d="
   M 113.39 79.35
   A 31.53 31.53 0.0 0 1 81.86 110.88
@@ -168,7 +174,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#333333"
+        fill={fill}
         d="
   M 196.13 79.35
   A 31.53 31.53 0.0 0 1 164.60 110.88
@@ -184,7 +190,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#333333"
+        fill={fill}
         d="
   M 278.85 79.35
   A 31.53 31.53 0.0 0 1 247.32 110.88

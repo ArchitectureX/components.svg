@@ -7,19 +7,19 @@ type Props = {
 }
 
 const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = undefined }) => (
-  <div data-component="SVG.Calendar" onClick={onClick} title={label}>
+  <div data-component="SVG.Money" onClick={onClick} title={label}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       viewBox="0.00 0.00 553.00 451.00"
       fill="none"
-      stroke="currentColor"
+      stroke="#666"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 400.97 101.21
   A 0.36 0.36 0.0 0 0 401.47 101.54
@@ -84,7 +84,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 432.17 312.75
   A 4.25 4.25 0.0 0 1 430.33 313.19
@@ -127,7 +127,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 326.87 263.48
   A 60.96 60.96 0.0 0 1 265.91 324.44
@@ -143,7 +143,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 272.00 293.27
   C 271.98 303.28 259.00 302.26 259.93 293.30
@@ -170,7 +170,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 178.58 263.49
   A 18.34 18.34 0.0 0 1 160.24 281.83
@@ -186,7 +186,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <path
-        fill="#000000"
+        fill="#666"
         d="
   M 389.92 263.49
   A 18.33 18.33 0.0 0 1 371.59 281.82

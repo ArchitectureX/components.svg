@@ -12,7 +12,7 @@ type Props = {
 
 const Arrow: FC<Props> = ({
   direction = 'right',
-  stroke = 'currentColor',
+  stroke = '#666',
   fill = 'none',
   width = 24,
   height = 24,

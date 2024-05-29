@@ -4,10 +4,16 @@ type Props = {
   label?: string
   onClick?: any
   className?: string
+  fill?: string
 }
 
-const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = undefined }) => (
-  <div data-component="SVG.Calendar" onClick={onClick} title={label}>
+const SVG: FC<Props> = ({
+  className = 'h-6 w-6',
+  label = undefined,
+  onClick = undefined,
+  fill = '#666'
+}) => (
+  <div data-component="SVG.Phone" onClick={onClick} title={label}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -19,7 +25,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
       strokeLinejoin="round"
     >
       <path
-        fill="#000000"
+        fill={fill}
         d="
   M 354.53 464.96
   A 57.02 57.02 0.0 0 1 297.51 521.98
@@ -56,7 +62,7 @@ const SVG: FC<Props> = ({ className = 'h-6 w-6', label = undefined, onClick = un
   Z"
       />
       <rect
-        fill="#000000"
+        fill={fill}
         x="-30.37"
         y="-11.06"
         transform="translate(213.27,471.09) rotate(0.1)"
