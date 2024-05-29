@@ -1,8 +1,10 @@
 import Arrow from './Arrow'
 import Calendar from './Calendar'
 import Chart from './Chart'
+import Email from './Email'
 import Guests from './Guests'
 import Hamburger from './Hamburger'
+import Lock from './Lock'
 import Logo from './Logo'
 import Logout from './Logout'
 import Money from './Money'
@@ -19,8 +21,10 @@ const SVG = {
   Arrow,
   Calendar,
   Chart,
+  Email,
   Guests,
   Hamburger,
+  Lock,
   Logo,
   Logout,
   Money,
