@@ -4,14 +4,14 @@ type Props = {
   label?: string
   onClick?: any
   className?: string
-  fill?: string
+  color?: string
 }
 
 const SVG: FC<Props> = ({
   className = 'h-6 w-6',
   label = undefined,
   onClick = undefined,
-  fill = '#666'
+  color = '#666'
 }) => (
   <div data-component="SVG.Chart" onClick={onClick} title={label}>
     <svg
@@ -25,7 +25,7 @@ const SVG: FC<Props> = ({
       strokeLinejoin="round"
     >
       <path
-        fill={fill}
+        fill={color}
         d="
   M 225.57 104.86
   L 311.74 124.39
@@ -61,11 +61,11 @@ const SVG: FC<Props> = ({
   Q 224.97 104.72 225.57 104.86
   Z"
       />
-      <rect fill={fill} x="384.76" y="119.08" width="89.94" height="243.56" rx="0.26" />
-      <rect fill={fill} x="168.80" y="156.49" width="90.10" height="206.14" rx="0.74" />
-      <rect fill={fill} x="276.76" y="180.85" width="89.98" height="181.78" rx="0.74" />
-      <rect fill={fill} x="60.86" y="212.55" width="90.04" height="150.10" rx="0.41" />
-      <rect fill={fill} x="60.84" y="376.78" width="413.92" height="15.74" rx="0.66" />
+      <rect fill={color} x="384.76" y="119.08" width="89.94" height="243.56" rx="0.26" />
+      <rect fill={color} x="168.80" y="156.49" width="90.10" height="206.14" rx="0.74" />
+      <rect fill={color} x="276.76" y="180.85" width="89.98" height="181.78" rx="0.74" />
+      <rect fill={color} x="60.86" y="212.55" width="90.04" height="150.10" rx="0.41" />
+      <rect fill={color} x="60.84" y="376.78" width="413.92" height="15.74" rx="0.66" />
     </svg>
   </div>
 )

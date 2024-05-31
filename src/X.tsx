@@ -7,7 +7,7 @@ type Props = {
   label?: string
   onClick?: any
   size?: number
-  stroke?: string
+  color?: string
   width?: number
 }
 
@@ -18,7 +18,7 @@ const SVG: FC<Props> = ({
   label = undefined,
   onClick = undefined,
   size = 24,
-  stroke = '#666',
+  color = '#666',
   width = 24
 }) => (
   <div data-component="SVG.X" className={className} onClick={onClick} title={label}>
@@ -28,7 +28,7 @@ const SVG: FC<Props> = ({
       height={size || height}
       viewBox="0 0 24 24"
       fill={fill}
-      stroke={stroke}
+      stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

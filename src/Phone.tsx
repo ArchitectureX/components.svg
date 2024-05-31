@@ -4,14 +4,14 @@ type Props = {
   label?: string
   onClick?: any
   className?: string
-  fill?: string
+  color?: string
 }
 
 const SVG: FC<Props> = ({
   className = 'h-6 w-6',
   label = undefined,
   onClick = undefined,
-  fill = '#666'
+  color = '#666'
 }) => (
   <div data-component="SVG.Phone" onClick={onClick} title={label}>
     <svg
@@ -25,7 +25,7 @@ const SVG: FC<Props> = ({
       strokeLinejoin="round"
     >
       <path
-        fill={fill}
+        fill={color}
         d="
   M 354.53 464.96
   A 57.02 57.02 0.0 0 1 297.51 521.98
@@ -62,7 +62,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <rect
-        fill={fill}
+        fill={color}
         x="-30.37"
         y="-11.06"
         transform="translate(213.27,471.09) rotate(0.1)"

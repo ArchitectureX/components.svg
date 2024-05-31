@@ -4,14 +4,14 @@ type Props = {
   className?: string
   label?: string
   onClick?: any
-  stroke?: string
+  color?: string
 }
 
 const SVG: FC<Props> = ({
   className = undefined,
   label = undefined,
   onClick = undefined,
-  stroke = '#666'
+  color = '#666'
 }) => (
   <div data-component="SVG.Sun" className={className} onClick={onClick} title={label}>
     <svg
@@ -19,7 +19,7 @@ const SVG: FC<Props> = ({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={stroke}
+      stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -3,13 +3,13 @@ import React, { FC } from 'react'
 type Props = {
   label?: string
   onClick?: any
-  fill?: string
+  color?: string
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined, fill = '#666' }) => (
+const SVG: FC<Props> = ({ label = undefined, onClick = undefined, color = '#666' }) => (
   <div data-component="SVG.Cabin" onClick={onClick} title={label}>
     <svg
-      fill={fill}
+      fill={color}
       width="24px"
       height="24px"
       viewBox="0 0 24 24"

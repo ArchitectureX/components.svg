@@ -6,16 +6,16 @@ type Props = {
   label?: string
   onClick?: any
   size?: number
-  stroke?: string
   width?: number
+  color?: string
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined, stroke = '#666' }) => (
+const SVG: FC<Props> = ({ label = undefined, onClick = undefined, color = '#666' }) => (
   <div data-component="SVG.Hamburger" onClick={onClick} title={label}>
     <svg
       className="w-6 h-6"
       fill="none"
-      stroke={stroke}
+      stroke={color}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       style={onClick ? { cursor: 'pointer' } : {}}
