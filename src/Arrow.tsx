@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 type Props = {
   direction?: 'left' | 'right' | 'up' | 'down'
-  stroke?: string
+  color?: string
   fill?: string
   width?: number
   height?: number
