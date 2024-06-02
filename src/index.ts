@@ -4,6 +4,7 @@ import Bell from './Bell'
 import Cabin from './Cabin'
 import Calendar from './Calendar'
 import Chart from './Chart'
+import Edit from './Edit'
 import Email from './Email'
 import Guests from './Guests'
 import Hamburger from './Hamburger'
@@ -18,6 +19,7 @@ import Settings from './Settings'
 import Phone from './Phone'
 import Plus from './Plus'
 import Sun from './Sun'
+import Trash from './Trash'
 import User from './User'
 import World from './World'
 import X from './X'
@@ -29,6 +31,7 @@ const SVG = {
   Cabin,
   Calendar,
   Chart,
+  Edit,
   Email,
   Guests,
   Hamburger,
@@ -43,6 +46,7 @@ const SVG = {
   Reports,
   Settings,
   Sun,
+  Trash,
   User,
   World,
   X
