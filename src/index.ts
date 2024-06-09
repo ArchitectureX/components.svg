@@ -21,6 +21,7 @@ import Plus from './Plus'
 import Sun from './Sun'
 import Trash from './Trash'
 import User from './User'
+import Wifi from './Wifi'
 import World from './World'
 import X from './X'
 
@@ -48,6 +49,7 @@ const SVG = {
   Sun,
   Trash,
   User,
+  Wifi,
   World,
   X
 }

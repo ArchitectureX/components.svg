@@ -7,7 +7,7 @@ type Props = {
 }
 
 const SVG: FC<Props> = ({ label = undefined, onClick = undefined, color = '#666' }) => (
-  <div data-component="SVG.Plus" onClick={onClick} title={label}>
+  <div data-component="SVG.Wifi" onClick={onClick} title={label}>
     <svg
       width="24px"
       height="24px"
