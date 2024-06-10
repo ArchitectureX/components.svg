@@ -1,33 +1,36 @@
 import React, { FC } from 'react'
 
 type Props = {
-  className?: string
-  fill?: string
-  height?: number
+  alternativeColor?: string
+  color?: string
+  height?: string
   label?: string
   onClick?: any
-  size?: number
-  color?: string
-  width?: number
+  size?: string
+  width?: string
 }
 
 const SVG: FC<Props> = ({
-  className = undefined,
-  fill = 'none',
-  height = 24,
+  alternativeColor = '',
+  color = '#666',
+  height = '24px',
   label = undefined,
   onClick = undefined,
-  size = 24,
-  color = '#666',
-  width = 24
+  size = '',
+  width = '24px'
 }) => (
-  <div data-component="SVG.X" className={className} onClick={onClick} title={label}>
+  <div
+    data-component="SVG.X"
+    onClick={onClick}
+    title={label}
+    style={onClick ? { cursor: 'pointer' } : {}}
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={size || width}
       height={size || height}
       viewBox="0 0 24 24"
-      fill={fill}
+      fill={alternativeColor || color}
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"

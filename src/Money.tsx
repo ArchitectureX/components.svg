@@ -1,31 +1,43 @@
 import React, { FC } from 'react'
 
 type Props = {
+  alternativeColor?: string
+  color?: string
+  height?: string
   label?: string
   onClick?: any
-  className?: string
-  color?: string
+  size?: string
+  width?: string
 }
 
 const SVG: FC<Props> = ({
-  className = 'h-6 w-6',
+  alternativeColor = '',
+  color = '#666',
+  height = '24px',
   label = undefined,
   onClick = undefined,
-  color = '#666'
+  size = '',
+  width = '24px'
 }) => (
-  <div data-component="SVG.Money" onClick={onClick} title={label}>
+  <div
+    data-component="SVG.Money"
+    onClick={onClick}
+    title={label}
+    style={onClick ? { cursor: 'pointer' } : {}}
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
       viewBox="0.00 0.00 553.00 451.00"
       fill="none"
-      stroke={color}
+      stroke={alternativeColor || color}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      height={size || height}
+      width={size || width}
     >
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 400.97 101.21
   A 0.36 0.36 0.0 0 0 401.47 101.54
@@ -90,7 +102,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 432.17 312.75
   A 4.25 4.25 0.0 0 1 430.33 313.19
@@ -133,7 +145,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 326.87 263.48
   A 60.96 60.96 0.0 0 1 265.91 324.44
@@ -149,7 +161,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 272.00 293.27
   C 271.98 303.28 259.00 302.26 259.93 293.30
@@ -176,7 +188,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 178.58 263.49
   A 18.34 18.34 0.0 0 1 160.24 281.83
@@ -192,7 +204,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 389.92 263.49
   A 18.33 18.33 0.0 0 1 371.59 281.82

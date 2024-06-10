@@ -1,17 +1,34 @@
 import React, { FC } from 'react'
 
 type Props = {
+  alternativeColor?: string
+  color?: string
+  height?: string
   label?: string
   onClick?: any
-  color?: string
+  size?: string
+  width?: string
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined, color = '#666' }) => (
-  <div data-component="SVG.Lock" onClick={onClick} title={label}>
+const SVG: FC<Props> = ({
+  alternativeColor = '',
+  color = '#666',
+  height = '24px',
+  label = undefined,
+  onClick = undefined,
+  size = '',
+  width = '24px'
+}) => (
+  <div
+    data-component="SVG.Lock"
+    onClick={onClick}
+    title={label}
+    style={onClick ? { cursor: 'pointer' } : {}}
+  >
     <svg
-      fill={color}
-      width="24px"
-      height="24px"
+      fill={alternativeColor || color}
+      width={size || width}
+      height={size || height}
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"

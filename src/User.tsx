@@ -1,22 +1,40 @@
 import React, { FC } from 'react'
 
 type Props = {
+  alternativeColor?: string
+  color?: string
+  height?: string
   label?: string
   onClick?: any
-  color?: string
+  size?: string
+  width?: string
 }
 
-const SVG: FC<Props> = ({ label = undefined, onClick = undefined, color = '#666' }) => (
-  <div data-component="SVG.User" onClick={onClick} title={label}>
+const SVG: FC<Props> = ({
+  alternativeColor = '',
+  color = '#666',
+  height = '24px',
+  label = undefined,
+  onClick = undefined,
+  size = '',
+  width = '24px'
+}) => (
+  <div
+    data-component="SVG.User"
+    onClick={onClick}
+    title={label}
+    style={onClick ? { cursor: 'pointer' } : {}}
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
       viewBox="0 0 24 24"
       strokeWidth="2"
-      stroke={color}
+      stroke={alternativeColor || color}
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
+      height={size || height}
+      width={size || width}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>

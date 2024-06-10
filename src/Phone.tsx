@@ -1,31 +1,43 @@
 import React, { FC } from 'react'
 
 type Props = {
+  alternativeColor?: string
+  color?: string
+  height?: string
   label?: string
   onClick?: any
-  className?: string
-  color?: string
+  size?: string
+  width?: string
 }
 
 const SVG: FC<Props> = ({
-  className = 'h-6 w-6',
+  alternativeColor = '',
+  color = '#666',
+  height = '24px',
   label = undefined,
   onClick = undefined,
-  color = '#666'
+  size = '',
+  width = '24px'
 }) => (
-  <div data-component="SVG.Phone" onClick={onClick} title={label}>
+  <div
+    data-component="SVG.Phone"
+    onClick={onClick}
+    title={label}
+    style={onClick ? { cursor: 'pointer' } : {}}
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
       viewBox="0.00 0.00 446.00 559.00"
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      height={size || height}
+      width={size || width}
     >
       <path
-        fill={color}
+        fill={alternativeColor || color}
         d="
   M 354.53 464.96
   A 57.02 57.02 0.0 0 1 297.51 521.98
@@ -62,7 +74,7 @@ const SVG: FC<Props> = ({
   Z"
       />
       <rect
-        fill={color}
+        fill={alternativeColor || color}
         x="-30.37"
         y="-11.06"
         transform="translate(213.27,471.09) rotate(0.1)"

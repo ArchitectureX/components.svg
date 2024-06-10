@@ -1,23 +1,25 @@
 import React, { FC } from 'react'
 
 type Props = {
-  direction?: 'left' | 'right' | 'up' | 'down'
+  alternativeColor?: string
   color?: string
-  fill?: string
-  width?: number
-  height?: number
-  size?: number
+  direction?: 'left' | 'right' | 'up' | 'down'
+  height?: string
+  label?: string
   onClick?: any
+  size?: string
+  width?: string
 }
 
 const Arrow: FC<Props> = ({
-  direction = 'right',
+  alternativeColor = '',
   color = '#666',
-  fill = 'none',
-  width = 24,
-  height = 24,
-  size = 24,
-  onClick = null
+  direction = 'right',
+  height = '24px',
+  label = undefined,
+  onClick = undefined,
+  size = '',
+  width = '24px'
 }) => {
   let polylinePoints = '9 18 15 12 9 6'
 
@@ -34,21 +36,26 @@ const Arrow: FC<Props> = ({
   }
 
   return (
-    <svg
+    <div
+      data-component="SVG.Arrow"
       onClick={onClick}
-      xmlns="http://www.w3.org/2000/svg"
-      width={size || width}
-      height={size || height}
-      viewBox="0 0 24 24"
-      fill={fill}
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
       style={onClick ? { cursor: 'pointer' } : {}}
+      title={label}
     >
-      <polyline points={polylinePoints} />
-    </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size || width}
+        height={size || height}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke={alternativeColor || color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <polyline points={polylinePoints} />
+      </svg>
+    </div>
   )
 }
 
