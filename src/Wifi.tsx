@@ -32,7 +32,7 @@ const SVG: FC<Props> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-423.000000, -3604.000000)" fill={alternativeColor || color}>
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

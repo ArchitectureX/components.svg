@@ -36,9 +36,9 @@ const SVG: FC<Props> = ({
       <path
         d="M6 12H18M12 6V18"
         stroke={alternativeColor || color}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   </div>
