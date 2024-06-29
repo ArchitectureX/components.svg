@@ -10,6 +10,8 @@ import Coffee from './Coffee'
 import Edit from './Edit'
 import Elevator from './Elevator'
 import Email from './Email'
+import Eye from './Eye'
+import EyeOff from './EyeOff'
 import Garden from './Garden'
 import Grill from './Grill'
 import Guests from './Guests'
@@ -56,6 +58,8 @@ const SVG = {
   Edit,
   Elevator,
   Email,
+  Eye,
+  EyeOff,
   Garden,
   Grill,
   Guests,
