@@ -8,6 +8,7 @@ type Props = {
   onClick?: any
   size?: string
   width?: string
+  className?: string
 }
 
 const SVG: FC<Props> = ({
@@ -17,13 +18,15 @@ const SVG: FC<Props> = ({
   label = undefined,
   onClick = undefined,
   size = '',
-  width = '24px'
+  width = '24px',
+  className = undefined
 }) => (
   <div
     data-component="SVG.AC"
     onClick={onClick}
     style={onClick ? { cursor: 'pointer' } : {}}
     title={label}
+    className={className}
   >
     <svg
       width={size || width}

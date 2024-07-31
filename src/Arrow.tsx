@@ -9,6 +9,7 @@ type Props = {
   onClick?: any
   size?: string
   width?: string
+  className?: string
 }
 
 const Arrow: FC<Props> = ({
@@ -19,7 +20,8 @@ const Arrow: FC<Props> = ({
   label = undefined,
   onClick = undefined,
   size = '',
-  width = '24px'
+  width = '24px',
+  className = undefined
 }) => {
   let polylinePoints = '9 18 15 12 9 6'
 
@@ -41,6 +43,7 @@ const Arrow: FC<Props> = ({
       onClick={onClick}
       style={onClick ? { cursor: 'pointer' } : {}}
       title={label}
+      className={className}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
