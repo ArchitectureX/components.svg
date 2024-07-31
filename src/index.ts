@@ -40,6 +40,7 @@ import Swim from './Swim'
 import TV from './TV'
 import Towel from './Towel'
 import Trash from './Trash'
+import Upload from './Upload'
 import User from './User'
 import Wifi from './Wifi'
 import World from './World'
@@ -88,6 +89,7 @@ const SVG = {
   TV,
   Towel,
   Trash,
+  Upload,
   User,
   Wifi,
   World,
