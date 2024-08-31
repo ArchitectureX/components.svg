@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 type Props = {
   alternativeColor?: string
@@ -19,7 +19,8 @@ const SVG: FC<Props> = ({
   onClick = undefined,
   size = '',
   width = '24px',
-  className = undefined
+  className = undefined,
+  ...svgProps
 }) => (
   <div
     data-component="SVG.Oven"
@@ -27,6 +28,7 @@ const SVG: FC<Props> = ({
     title={label}
     className={className}
     style={onClick ? { cursor: 'pointer' } : {}}
+    {...svgProps}
   >
     <svg
       width={size || width}

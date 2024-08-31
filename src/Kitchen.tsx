@@ -19,7 +19,8 @@ const SVG: FC<Props> = ({
   onClick = undefined,
   size = '',
   width = '24px',
-  className = undefined
+  className = undefined,
+  ...svgProps
 }) => (
   <div
     data-component="SVG.Kitchen"
@@ -27,6 +28,7 @@ const SVG: FC<Props> = ({
     title={label}
     className={className}
     style={onClick ? { cursor: 'pointer' } : {}}
+    {...svgProps}
   >
     <svg
       width={size || width}

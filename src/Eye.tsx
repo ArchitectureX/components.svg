@@ -17,7 +17,8 @@ const SVG: FC<Props> = ({
   height = '24px',
   size = '',
   width = '24px',
-  className = undefined
+  className = undefined,
+  ...svgProps
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +31,7 @@ const SVG: FC<Props> = ({
     strokeLinecap="round"
     strokeLinejoin="round"
     className={className}
+    {...svgProps}
   >
     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
     <circle cx="12" cy="12" r="3" />
